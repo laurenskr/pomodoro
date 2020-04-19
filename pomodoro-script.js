@@ -3,8 +3,9 @@ let seconds = "00";
 let go = true
 const secondsCount = document.getElementById("seconds")
 const minutesCount = document.getElementById("minutes")
-
+//countdown timer every 1000ms
 function countdown() {
+    //check if timer should still go (pause() sets go to false)
     go = true
     window.setInterval(function(){
     if (go){
@@ -20,6 +21,7 @@ function countdown() {
     secondsCount.innerText = seconds
 }
   }, 1000);}
+//pause the timer by setting !go
 function pause() {
     go = false
 }
