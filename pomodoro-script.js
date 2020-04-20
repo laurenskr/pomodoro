@@ -5,7 +5,11 @@ const secondsCount = document.getElementById("seconds")
 const minutesCount = document.getElementById("minutes")
 
 
-
+//set number of minutes timer should run for
+function setMinutes() {
+    minutes = prompt("How many minutes should the timer run for?")
+    minutesCount.innerText = minutes
+}
 
 //countdown timer every 1000ms
 function countdown() {
@@ -28,7 +32,8 @@ function countdown() {
     }
     secondsCount.innerText = seconds
 }
-  }, 1000);}
+  }, 1000);
+}
 //pause the timer by setting go to false
 function pause() {
     go = false
