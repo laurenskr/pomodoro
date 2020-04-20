@@ -3,6 +3,10 @@ let seconds = "00";
 let go = true
 const secondsCount = document.getElementById("seconds")
 const minutesCount = document.getElementById("minutes")
+
+
+
+
 //countdown timer every 1000ms
 function countdown() {
     //check if timer should still go (pause() sets go to false)
@@ -10,6 +14,10 @@ function countdown() {
     window.setInterval(function(){
     if (go){
     seconds--
+    if (minutes == 0 && seconds == 0){
+        secondsCount.innerText = "00"
+        alert("Tijd voor pauze")
+    }
     if (seconds < 0) {
         seconds = 59
         minutes--
