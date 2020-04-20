@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomdoro Timer</title>
+    <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div id="minutes">25</div>: <div id="seconds">00</div>
-        
+        <div class="timer">
+            <div id="minutes">25</div>: <div id="seconds">00</div>
+        </div>
+        <div class="buttons">
+            <button onclick=setMinutes()>set time</button>
+            <button onclick=countdown()>start timer</button>
+            <button onclick=pause()>stop timer</button>
+        </div>
     </div>
-    <button onclick=setMinutes()>set time</button>
-    <button onclick=countdown()>start timer</button>
-    <button onclick=pause()>stop timer</button>
+   
     <script src="pomodoro-script.js"></script>
 </body>
 </html>
