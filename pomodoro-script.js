@@ -21,7 +21,7 @@ function countdown() {
     secondsCount.innerText = seconds
 }
   }, 1000);}
-//pause the timer by setting !go
+//pause the timer by setting go to false
 function pause() {
     go = false
 }
